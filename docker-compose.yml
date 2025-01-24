@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    image: ice-profile
+    container_name: ice
+    ports:
+      - 8888:80
