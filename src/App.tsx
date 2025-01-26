@@ -9,7 +9,7 @@ function App() {
       <div>
         I'm ice.
       </div>
-      <h1>：） x{count}</h1>
+      <h1>：） x {count}</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           Smile
