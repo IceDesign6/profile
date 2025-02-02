@@ -13,8 +13,8 @@ export default defineConfig({
       { find: "@components", replacement: path.resolve("./src/components") },
       { find: "@hooks", replacement: path.resolve("./src/hooks") },
       { find: "@interface", replacement: path.resolve("./src/interface") },
-      { find: "@locales", replacement: path.resolve("./src/locales") },
       { find: "@pages", replacement: path.resolve("./src/pages") },
+      { find: "@plugins", replacement: path.resolve("./src/plugins") },
     ],
   },
 });

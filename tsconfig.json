@@ -12,8 +12,8 @@
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@interface/*": ["./src/interface/*"],
-      "@locales/*": ["./src/locales/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@plugins/*": ["./src/plugins/*"]
     }
   }
 }

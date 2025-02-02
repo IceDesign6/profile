@@ -8,29 +8,29 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const [menu] = useState<MenuItem[]>([
-    { label: t("homepage"), link: "/" },
-    { label: t("experience"), link: "/work-experience" },
+    { label: "homepage", link: "/" },
+    { label: "experience", link: "/work-experience" },
   ]);
 
   const switchLanguage = (lang: string) => i18n.changeLanguage(lang);
 
   return (
     <>
-      <div>
+      <div className="flex justify-end">
         {menu.map((menuItem) => {
           return (
             <NavLink
               to={{ pathname: menuItem.link }}
-              className="text-3xl"
+              className="text-2xl font-[500] px-[30px] leading-[4]"
               key={menuItem.label}
             >
-              {menuItem.label}
+              {t(menuItem.label)}
             </NavLink>
           );
         })}
-        <div onClick={() => switchLanguage("en")}>EN</div>
-        <div onClick={() => switchLanguage("zh")}>繁體</div>
       </div>
+      <div onClick={() => switchLanguage("en")}>EN</div>
+      <div onClick={() => switchLanguage("zhTw")}>繁體</div>
     </>
   );
 };
