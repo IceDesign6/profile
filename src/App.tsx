@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import Header from "@components/common/Header";
-import Homepage from "@pages/Homepage";
-import WorkExperience from "@pages/WorkExperience";
+import Biography from "@/pages/Biography";
+import WorkExperiences from "@/pages/WorkExperiences";
+import Portfolios from "@/pages/Portfolios";
+import Contact from "@/pages/Contact";
 
 import useLocalizeDocumentAttributes from "@plugins/i18n/useLocalizeDocumentAttributes";
 
@@ -11,10 +13,12 @@ export default () => {
 
   return (
     <BrowserRouter>
-      <Header></Header>
+      <Header />
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/work-experience" element={<WorkExperience />} />
+        <Route path="/" element={<Biography />} />
+        <Route path="/work-experience" element={<WorkExperiences />} />
+        <Route path="/portfolios" element={<Portfolios />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

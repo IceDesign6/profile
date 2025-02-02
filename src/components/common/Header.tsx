@@ -8,15 +8,17 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   const [menu] = useState<MenuItem[]>([
-    { label: "homepage", link: "/" },
+    { label: "biography", link: "/" },
     { label: "experience", link: "/work-experience" },
+    { label: "portfolios", link: "/portfolios" },
+    { label: "contact", link: "/contact" },
   ]);
 
   const switchLanguage = (lang: string) => i18n.changeLanguage(lang);
 
   return (
     <>
-      <div className="flex justify-end">
+      <div className="flex justify-end mx-[50px]">
         {menu.map((menuItem) => {
           return (
             <NavLink
