@@ -8,8 +8,8 @@ i18n
   .use(HttpApi)
   .use(initReactI18next)
   .init({
-    lng: "zhTw",
-    fallbackLng: "zhTw",
+    lng: "en",
+    fallbackLng: "en",
     supportedLngs: ["zhTw", "en"],
     interpolation: {
       escapeValue: false,
