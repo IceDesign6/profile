@@ -12,7 +12,7 @@ const routes = [
   { path: "/contact", element: <Contact /> },
 ];
 
-export const RouterWrapper = () => (
+export const Router = () => (
   <Routes>
     {
       routes.map(({ path, element }) => 

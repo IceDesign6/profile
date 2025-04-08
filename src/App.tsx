@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router";
 
-import Header from "@components/common/Header";
-import { RouterWrapper } from "./router";
+import Header from "@/components/Common/Header";
+import { Router } from "./router";
 import useLocalizeDocumentAttributes from "@plugins/i18n/useLocalizeDocumentAttributes";
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <RouterWrapper />
+      <Router />
     </BrowserRouter>
   );
 };
